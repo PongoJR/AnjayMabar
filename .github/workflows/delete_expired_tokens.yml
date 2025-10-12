@@ -70,10 +70,10 @@ jobs:
             echo "Tidak ada token yang kedaluwarsa."
           else
             mv temp_filtered.json tokens.json
-            git config --global user.name "PongoJr"
+            git config --global user.name "PongoJR"
             git config --global user.email "$GH_EMAIL"
             git add tokens.json
             git commit -m "Cleanup expired tokens"
-            git push https://PongoJr:${GH_TOKEN}@github.com/PongoJr/AnjayMabar.git HEAD:main
+            git push https://PongoJR:${GH_TOKEN}@github.com/PongoJR/AnjayMabar.git HEAD:main
             echo "Tokens yang kedaluwarsa berhasil dihapus."
           fi
